@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Characters - Snakey diagram</title>
+<style>
+@import url("css/snakey.css");
+
+#chart {
+  height: 500px;
+}
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  font-size: 9px;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="libs/qtip/qtip.js"></script>
+
+
+
+<script src="catxml.js"></script>
+<script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+<script src="cooccurrence.js"></script>
+
+
+</head>
+
+<body onload="init_cooccurrence()">
+<h2>Character Co-occurrence</h2>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Transitions - Chord diagram</title>
+<style>
+
+@import url("chord_style.css");
+
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  fill-opacity: .5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+  display: none;
+}
+
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="libs/qtip/qtip.js"></script>
+
+
+
+<script src="catxml.js"></script>
+<script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+<script src="transitions_chord.js"></script>
+
+
+</head>
+
+<body onload="setup()">
+<h2>Transitions - Chord Diagram</h2>
+<aside>
+  <ul id="comic-list"></ul>
+</aside>
+</body>
+</html>
